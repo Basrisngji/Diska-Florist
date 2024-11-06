@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Halaman produk Diska Florist - Toko bunga dengan berbagai pilihan bunga segar untuk setiap acara.">
+    <meta name="keywords" content="produk bunga, bunga segar, florist Bekasi">
+    <meta name="robots" content="index, follow">
+    <title>Produk - Diska Florist</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<!-- Favicon -->
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+<!-- Link ke CSS -->
+<link rel="stylesheet" href="style.css">
+
+
+    <!-- Menambahkan Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <span>Diska</span> Florist
+        </div>
+        <ul class="navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Produk</a></li>
+            <li><a href="#about">Tentang Kami</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <!-- Produk Section -->
+    <section class="product-list">
+        <h2>Produk Kami</h2>
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="img/buket bunga.jpeg" alt="Bouquet Mawar" class="product-image">
+                <h3>Flowers Bucket</h3>
+                <p class="product-price">Rp 250,000</p>
+                <button class="cta" onclick="toggleDetail('product1')">Detail</button>
+                <a href="https://wa.me/6287721899544?text=Saya%20ingin%20membeli%20produk%20ini" class="cta">Beli</a>
+
+                <!-- Modal Detail -->
+                <div class="modal" id="product1-modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeDetail('product1')">&times;</span>
+                        <h3>Flowers Bucket</h3>
+                        
+                        <p>Deskripsi:</p>
+                        <br>- Bukan bunga hidup
+                        <br>- Tinggi : +-65cm
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="img/bunga1.jpeg" alt="Arrangement Lily" class="product-image">
+                <h3>Flowers Bucket</h3>
+                <p class="product-price">Rp 250,000</p>
+                <button class="cta" onclick="toggleDetail('product2')">Detail</button>
+                <a href="https://wa.me/6287721899544?text=Saya%20ingin%20membeli%20produk%20ini" class="cta">Beli</a>
+
+                <!-- Modal Detail -->
+                <div class="modal" id="product2-modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeDetail('product2')">&times;</span>
+                        <h3>Flowers Bucket</h3>
+                        
+                        <p>Deskripsi:</p>
+                        <br>- Bukan bunga hidup
+                        <br>- Tinggi : +-65cm
+                       </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="img/bunga2.jpeg" alt="Bouquet Tulip" class="product-image">
+                <h3>Flowers Bucket</h3>
+                <p class="product-price">Rp 250,000</p>
+                <button class="cta" onclick="toggleDetail('product3')">Detail</button>
+                <a href="https://wa.me/6287721899544?text=Saya%20ingin%20membeli%20produk%20ini" class="cta">Beli</a>
+
+                <!-- Modal Detail -->
+                <div class="modal" id="product3-modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeDetail('product3')">&times;</span>
+                        <h3>Flowers Bucket</h3>
+                        
+                        <p>Deskripsi:</p>
+                        <br>- Bukan bunga hidup
+                        <br>- Tinggi : +-65cm
+                        </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <img src="img/boneka1.jpeg" alt="Bouquet Mawar" class="product-image">
+                <h3>Bucket Boneka+Flowers</h3>
+                <p class="product-price">Rp 230,000</p>
+                <button class="cta" onclick="toggleDetail('product4')">Detail</button>
+                <a href="https://wa.me/6287721899544?text=Saya%20ingin%20membeli%20produk%20ini" class="cta">Beli</a>
+
+                <!-- Modal Detail -->
+                <div class="modal" id="product4-modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeDetail('product4')">&times;</span>
+                        <h3>Bucket Boneka+Flowers</h3>
+                        
+                        <p>Deskripsi:</p>
+                        <br>- Bukan bunga hidup
+                        <br>- Tinggi : +-65cm
+                        </div>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card">
+                <img src="img/boneka2.jpeg" alt="Bouquet Mawar" class="product-image">
+                <h3>Bucket Boneka+Flowers</h3>
+                <p class="product-price">Rp 250,000</p>
+                <button class="cta" onclick="toggleDetail('product5')">Detail</button>
+                <a href="https://wa.me/6287721899544?text=Saya%20ingin%20membeli%20produk%20ini" class="cta">Beli</a>
+
+                <!-- Modal Detail -->
+                <div class="modal" id="product5-modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeDetail('product5')">&times;</span>
+                        <h3>Bucket Boneka+Flowers</h3>
+                        
+                        <p>Deskripsi:</p>
+                        <br>- Bukan bunga hidup
+                        <br>- Tinggi : +-65cm
+                        </div>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-card">
+                <img src="img/buket boneka.jpeg" alt="Bouquet Mawar" class="product-image">
+                <h3>Bucket Boneka+Flowers</h3>
+                <p class="product-price">Rp 230,000</p>
+                <button class="cta" onclick="toggleDetail('product6')">Detail</button>
+                <a href="https://wa.me/6287721899544?text=Saya%20ingin%20membeli%20produk%20ini" class="cta">Beli</a>
+
+                <!-- Modal Detail -->
+                <div class="modal" id="product6-modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeDetail('product6')">&times;</span>
+                        <h3>Bucket Boneka+Flowers</h3>
+                        
+                        <p>Deskripsi:</p>
+                        <br>- Bukan bunga hidup
+                        <br>- Tinggi : +-65cm
+                        </div>
+                </div>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="product-card">
+                <img src="img/buket uang.jpeg" alt="Bouquet Mawar" class="product-image">
+                <h3>Money Bucket+Flowers</h3>
+                <p class="product-price">Rp 245,000</p>
+                <button class="cta" onclick="toggleDetail('product7')">Detail</button>
+                <a href="https://wa.me/6287721899544?text=Saya%20ingin%20membeli%20produk%20ini" class="cta">Beli</a>
+
+                <!-- Modal Detail -->
+                <div class="modal" id="product7-modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeDetail('product7')">&times;</span>
+                        <h3>Money Bucket</h3>
+                        
+                        <p>Deskripsi:</p>
+                        <br>- 10k : 10 Lembar
+                        <br>- Tinggi : +-50cm
+                        </div>
+                </div>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="product-card">
+                <img src="img/uang1.jpeg" alt="Bouquet Mawar" class="product-image">
+                <h3>Money Bucket+Flowers</h3>
+                <p class="product-price">Rp 1.550,000</p>
+                <button class="cta" onclick="toggleDetail('product8')">Detail</button>
+                <a href="https://wa.me/6287721899544?text=Saya%20ingin%20membeli%20produk%20ini" class="cta">Beli</a>
+
+                <!-- Modal Detail -->
+                <div class="modal" id="product8-modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeDetail('product8')">&times;</span>
+                        <h3>Money Bucket</h3>
+                        
+                        <p>Deskripsi:</p>
+                        <br>- 10k : 15 Lembar
+                        <br>- 20k : 15 Lembar
+                        <br>- 50k : 20 Lembar
+                        <br>- Tinggi : +-65cm
+                        </div>
+                </div>
+            </div>
+
+            <!-- Product 9 -->
+            <div class="product-card">
+                <img src="img/uang2.jpeg" alt="Bouquet Mawar" class="product-image">
+                <h3>Money Bucket+Flowers</h3>
+                <p class="product-price">Rp 610,000</p>
+                <button class="cta" onclick="toggleDetail('product9')">Detail</button>
+                <a href="https://wa.me/6287721899544?text=Saya%20ingin%20membeli%20produk%20ini" class="cta">Beli</a>
+
+                <!-- Modal Detail -->
+                <div class="modal" id="product9-modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeDetail('product9')">&times;</span>
+                        <h3>Money Bucket</h3>
+                       
+                        <p>Deskripsi:</p>
+                        <br>- 50k : 10 Lembar
+                        <br>- Tinggi : +-50cm
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <!-- Sosial Media Section -->
+            <div class="footer-section">
+                <h4>Ikuti Kami di Sosial Media</h4>
+                <div class="social-icons">
+                    <a href="https://facebook.com/yourpage" target="_blank" class="social-icon">
+                        <i class="fab fa-facebook-f"></i> Facebook
+                    </a>
+                    <a href="https://instagram.com/yourpage" target="_blank" class="social-icon">
+                        <i class="fab fa-instagram"></i> Instagram
+                    </a>
+                    <a href="https://www.tiktok.com/@yourpage" target="_blank" class="social-icon">
+                        <i class="fab fa-tiktok"></i> TikTok
+                    </a>
+                </div>
+            </div>
+    
+            <!-- Platform E-Commerce Section -->
+            <div class="footer-section">
+                <h4>Temukan Kami di Platform E-Commerce</h4>
+                <div class="platform-icons">
+                    <a href="https://shopee.co.id/username" target="_blank" class="platform-icon">
+                        <i class="fas fa-shopping-cart"></i> Shopee
+                    </a>
+                    <a href="https://www.tokopedia.com/username" target="_blank" class="platform-icon">
+                        <i class="fas fa-store"></i> Tokopedia
+                    </a>
+                    <a href="https://www.lazada.co.id/shop/username" target="_blank" class="platform-icon">
+                        <i class="fas fa-store-alt"></i> Lazada
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+    // Fungsi untuk membuka modal detail produk
+function toggleDetail(productId) {
+    const modal = document.getElementById(productId + '-modal');
+    modal.style.display = "block";
+}
+
+// Fungsi untuk menutup modal detail produk
+function closeDetail(productId) {
+    const modal = document.getElementById(productId + '-modal');
+    modal.style.display = "none";
+}
+
+// Menutup modal jika klik di luar modal
+window.onclick = function(event) {
+    const modals = document.querySelectorAll('.modal');
+    modals.forEach(modal => {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    });
+}
+</script>
+</body>
+
+</html>
