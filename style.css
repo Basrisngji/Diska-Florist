@@ -1,0 +1,507 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e54b4b;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-nav li {
+    margin-left: 20px;
+}
+
+.navbar-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+/* Hamburger Icon (titik tiga) */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 100%;
+    height: 4px;
+    background-color: white;
+}
+
+/* Menyembunyikan menu pada tampilan mobile */
+.navbar-nav {
+    display: flex;
+}
+
+/* Hero Section */
+.hero {
+    background: url('img/diskaflorist.png') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.cta {
+    background-color: #e54b4b;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+    background-color: #c74d4d;
+}
+
+/* Tentang Kami */
+.about {
+    display: flex;
+    padding: 60px 20px;
+    background-color: #fff;
+    justify-content: center; /* Menyelaraskan konten ke tengah */
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: justify;
+    text-align: justify;
+    gap: 20px; /* Menambahkan sedikit jarak antar elemen */
+    max-width: 1200px; /* Maksimal lebar konten */
+    width: 100%; /* Membuat elemen lebar sesuai dengan ukuran layar */
+}
+
+.about-image img {
+    width: 100%; /* Gambar akan mengisi 100% dari kontainer */
+    max-width: 600px; /* Batasi ukuran maksimal gambar */
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+    width: 100%; /* Menghilangkan lebar tetap untuk teks */
+    max-width: 500px; /* Batasi lebar maksimum untuk teks */
+    padding-left: 20px; /* Memberikan ruang antara gambar dan teks */
+}
+
+.about h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.cta-secondary {
+    background-color: #e54b4b;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cta-secondary:hover {
+    background-color: #c74d4d;
+}
+
+/* Styling untuk Produk Kami */
+.products {
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.products-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.product-card {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+.product-image {
+    width: 70%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    font-size: 1.3rem;
+    margin: 15px 0;
+    color: #333;
+}
+
+
+.product-list h2{
+    text-align: center;
+    padding: 20px;font-size: 1.8rem;
+
+}
+
+/* Styling untuk produk detail */
+.product-detail {
+    display: none; /* Secara default, deskripsi produk disembunyikan */
+    margin-top: 20px;
+    background-color: #f7f7f7;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-detail-image {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+
+.contact {
+    display: flex;
+    padding: 60px 20px;
+    background-color: #f8f8f8;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    gap: 30px; /* Menambahkan jarak antara Maps dan Form */
+}
+
+.contact-map {
+    width: 60%;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+    width: 45%;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-form label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: block;
+    color: #555;
+}
+
+.contact-form input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+.contact-form input:focus {
+    outline: none;
+    border-color: #e54b4b;
+}
+
+.submit-btn {
+    background-color: #e54b4b;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #c74d4d;
+}
+
+/* Styling untuk modal */
+.modal {
+    display: none; /* Secara default modal disembunyikan */
+    position: fixed;
+    z-index: 1; /* Letakkan modal di atas konten lainnya */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Background transparan */
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: #f9f9f9;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.modal-image {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+/* Styling untuk Footer Sosial Media */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-section {
+    width: 45%;
+}
+
+.footer-section h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.social-icons, .platform-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.social-icon, .platform-icon {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover, .platform-icon:hover {
+    color: #f0a500;
+}
+
+.social-icon i, .platform-icon i {
+    font-size: 20px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #bbb;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Media Queries for Responsive Design */
+
+/* For mobile devices */
+@media screen and (max-width: 768px) {
+    .navbar-nav {
+        display: none;  /* Menyembunyikan menu di perangkat mobile */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Mengatur jarak menu dari navbar */
+        left: 0;
+        background-color: #333;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    .navbar-nav li {
+        margin: 10px 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .navbar-nav.active {
+        display: flex;  /* Menampilkan menu ketika aktif */
+    }
+
+    /* Hamburger Icon */
+    .hamburger {
+        display: flex;  /* Menampilkan hamburger icon pada mobile */
+    }
+
+    /* Hero Section */
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .cta {
+        padding: 12px 20px;
+    }
+
+
+    /* Tentang Kami */
+    .about {
+        flex-direction: column;
+        padding: 40px 10px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-image img {
+        max-width: 100%;
+    }
+
+    .about-text {
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    /* Produk */
+    .product-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .product-detail {
+        margin-top: 15px;
+    }
+
+    .product-detail-image {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Contact */
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-map {
+        width: 100%;
+        height: 300px;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+}
